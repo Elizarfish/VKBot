@@ -1,5 +1,6 @@
-username = raw_input("VK Username:")
-password = raw_input("VK Password:")
+#!/usr/bin/python
+username = raw_input("Логин:")
+password = raw_input("Пароль:")
 
 f = open("config.py", "w")
 f.write("username = '" + username + "'\n")
