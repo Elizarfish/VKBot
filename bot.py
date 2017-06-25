@@ -2,10 +2,13 @@
 #-*- coding utf8 -*-
 # Author: https://vk.com/id181265169
 import vk, urllib2, json, random, time
- 
+
 config = {}# Создаём массив с конфигурацией
-execfile("config.py", config)# Загружаем туда конфигурацию из файла
- 
+try:
+	execfile("config.py", config)# Загружаем туда конфигурацию из файла
+except IOError:
+	print u"Нету файла конйфигурации, чтобы его создать, запустите команду \"python auth.py\" "
+	quit(1)
 url = "https://oauth.vk.com/token?grant_type=password&client_id=3697615&client_secret=AlVXZFMUqyrnABp8ncuU&username=%s&password=%s" % (config['username'], config['password'])
 try:
     r = urllib2.urlopen(url)# Переходим по ссылке(логинимся)
@@ -42,8 +45,7 @@ def mainloop():
     except KeyboardInterrupt:
         pass
     except:
-        print u"Истекло время обращения к серверу, перезапуск через 5 секунд..."
-        time.sleep(5)
+        print u"Истекло время обращения к серверу"
         return
  
-mainloop()# Повторяем всё до бесконечности
+mainloop()

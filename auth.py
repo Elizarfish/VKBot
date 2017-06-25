@@ -1,6 +1,7 @@
 #!/usr/bin/python
-username = raw_input("Логин:")
-password = raw_input("Пароль:")
+#-*- coding utf8 -*-
+username = raw_input("Login:")
+password = raw_input("Password:")
 
 f = open("config.py", "w")
 f.write("username = '" + username + "'\n")
