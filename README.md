@@ -19,4 +19,5 @@ python bot.py
 
 **Осторожно! Не показывайте никому файл config.py, иначе вашу страницу смогут взломать.**
 
-Для запуска бота необходим [python 2.7](python.org) и [vk.com API Python wrapper](https://pypi.python.org/pypi/vk/2.0.2)
+Для запуска бота необходим [python](python.org) и [vk.com API Python wrapper](https://pypi.python.org/pypi/vk/2.0.2)
+Версия для python3 доступна в ветке **python3**
