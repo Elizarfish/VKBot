@@ -21,3 +21,7 @@ python bot.py
 
 Для запуска бота необходим [python](python.org) и [vk.com API Python wrapper](https://pypi.python.org/pypi/vk/2.0.2)
 Версия для python3 доступна в ветке **python3**
+
+
+XSS In Ascii Enconding 
+¼script¾alert(¢XSS¢)¼/script¾
